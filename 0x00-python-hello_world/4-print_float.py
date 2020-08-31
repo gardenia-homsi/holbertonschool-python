@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print ("{:%f},"Hello".format ($number))
+number = 3.14159
+print ("{:%2f},"Hello".format (number))
