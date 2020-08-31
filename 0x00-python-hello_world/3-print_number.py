@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("{:d} Battery street".format($number))
+number = 98
+print("{:d} Battery street".format(number))
