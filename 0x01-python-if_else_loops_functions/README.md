@@ -1,0 +1,1 @@
+this is new folder for learning loops and functions 
