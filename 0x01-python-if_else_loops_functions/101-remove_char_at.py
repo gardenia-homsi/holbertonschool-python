@@ -7,5 +7,5 @@ def remove_char_at(str, n):
             pass
         else:
             s += c
-            count += 1
-return s
+        count += 1
+    return s
