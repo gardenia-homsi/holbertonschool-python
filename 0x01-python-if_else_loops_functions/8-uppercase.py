@@ -5,4 +5,3 @@ while i < len(str):
     val = ord(str[i])-32
     print("{:c}".format(val), end="")
     i += 1
-print(" ")  
