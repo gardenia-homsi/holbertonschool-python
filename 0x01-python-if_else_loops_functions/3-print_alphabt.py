@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for j in range(97, 123):
-    if j != 101 and j != 113:
-        print ("{:c}".format(j), end="")
+for i in range(ord('a'), ord('z')+1):
+    if i != ord('e') and i != ord('q'):
+        print("{:c}".format(i), end="")
