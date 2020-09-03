@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 import hidden_4
-import re
+import os
 if __name__ == '__main__':
-    for line in hidden_4:
-        for word in line.split():
-            if word != re.findall(r'[__]\w+', word):
-                print(word)
+    for fname in listdir(hidden_4):
+        if fname[0] != '__':
+            print(fname)
