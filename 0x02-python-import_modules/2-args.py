@@ -7,4 +7,3 @@ if __name__ == '__main__':
             print("{:d}: {}".format(i, sys.argv[i]))
     else:
         print("0 arguments.")
-        
