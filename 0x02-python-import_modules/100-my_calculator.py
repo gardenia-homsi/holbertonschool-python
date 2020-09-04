@@ -7,20 +7,16 @@ if __name__ == '__main__':
         exit(1)
     else:
         if sys.argv[2] == "+":
-            print("{:d} + {:d} = {:d}".format(sys.argv[1], 
-sys.argv[3], add(sys.argv[1], sys.argv[3])))
+            print("{:d} + {:d} = {:d}".format(sys.argv[1], sys.argv[3], add(sys.argv[1], sys.argv[3])))
             exit(0)
         elif sys.argv[2] == "-":
-            print("{:d} - {:d} = {:d}".format(sys.argv[1], 
-sys.argv[3], add(sys.argv[1], sys.argv[3])))
+            print("{:d} - {:d} = {:d}".format(sys.argv[1], sys.argv[3], add(sys.argv[1], sys.argv[3])))
             exit(0)
         elif sys.argv[2] == "*":
-            print("{:d} * {:d} = {:d}".format(sys.argv[1], 
-sys.argv[3], add(sys.argv[1], sys.argv[3])))
+            print("{:d} * {:d} = {:d}".format(sys.argv[1], sys.argv[3], add(sys.argv[1], sys.argv[3])))
             exit(0)
         elif sys.argv[2] == "/":
-            print("{:d} / {:d} = {:d}".format(sys.argv[1], 
-sys.argv[3], add(sys.argv[1], sys.argv[3])))
+            print("{:d} / {:d} = {:d}".format(sys.argv[1], sys.argv[3], add(sys.argv[1], sys.argv[3])))
             exit(0)
         else:
             print("Unknown operator. Available operators: +, -, * and /")
