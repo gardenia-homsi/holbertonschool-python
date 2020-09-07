@@ -5,4 +5,4 @@ def element_at(my_list, idx):
     else:
         for i in range(0, len(my_list)):
             if (i == idx):
-                print("Element at index {:d} is {}".format(idx, my_list[i]))
+                return my_list[i]
