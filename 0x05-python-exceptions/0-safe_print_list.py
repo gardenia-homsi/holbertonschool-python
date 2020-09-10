@@ -2,7 +2,7 @@
 def safe_print_list(my_list=[], x=0):
     count = 0
     try:
-        for i in range(0, x+1):
+        for i in range(0, x):
             print(my_list[i], end="")
         return x
     except:
