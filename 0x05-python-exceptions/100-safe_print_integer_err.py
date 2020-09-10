@@ -4,5 +4,5 @@ def safe_print_integer_err(value):
         print("{:d}".format(value))
         return True
     except:
-        print("Exception: Unknown format code 'd' for object of type 'str'")
+        raise TypeError("Exception: Unknown format code 'd' for object of type 'str'")
         return False
