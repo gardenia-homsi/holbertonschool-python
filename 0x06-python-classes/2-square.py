@@ -5,12 +5,9 @@ eptions."""
 
 class Square:
     """This class does one private attribute."""
-    try:
-        def __init__(self, size=0):
+    def __init__(self, size=0):
             self.__size = size
-    if type(x) != <type 'int'>:
-        except TypeError:
-            print("size must be an integer")
-    if size < 0:
-        except ValueError:
-            print("size must be >= 0")
+    if type(self.__size) != int:
+        raise TypeError("size must be an integer")
+    if self.__size < 0:
+        raise ValueError("size must be >= 0")
