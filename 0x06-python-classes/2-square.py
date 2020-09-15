@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""This module does one class that has one private integer attribute with 2 exceptions."""
+"""This module does one class that has one private integer attribute with 2 exc
+eptions."""
 
 
 class Square:
@@ -7,9 +8,9 @@ class Square:
     try:
         def __init__(self, size=0):
             self.__size = size
-    except TypeError:
-        if type(x) == <type 'int'>:
+    if type(x) != <type 'int'>:
+        except TypeError:
             print("size must be an integer")
-    except ValueError:
-        if size < 0:
+    if size < 0:
+        except ValueError:
             print("size must be >= 0")
