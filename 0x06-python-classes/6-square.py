@@ -26,9 +26,9 @@ class Square:
 
     @preperty
     def position(self):
-        return elf.__position
+        return self.__position
 
-    @size.setter
+    @position.setter
     def position(self, value):
         if self.__position[0] < 0 and self.__position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
