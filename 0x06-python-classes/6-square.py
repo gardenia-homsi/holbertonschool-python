@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""This module does one class that has one private integer attribute with 2 exc
+eptions."""
+
+
 class Square:
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
