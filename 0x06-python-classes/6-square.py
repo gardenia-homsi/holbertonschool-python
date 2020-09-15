@@ -6,8 +6,11 @@ eptions."""
 class Square:
     """This class has private size attribute with exceptions."""
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.size = size
+        try:
+            self.position = position
+        except TypeError as ti:
+            print(ti)
 
     @property
     def size(self):
