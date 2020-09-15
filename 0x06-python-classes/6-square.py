@@ -4,6 +4,7 @@ eptions."""
 
 
 class Square:
+    """This class has private size attribute with exceptions."""
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         try:
@@ -13,10 +14,12 @@ class Square:
 
     @property
     def position(self):
+        """get size value."""
         return self.__position
 
     @position.setter
     def position(self, value):
+        """set size value."""
         if value[0] < 0 or value[1] < 0:
             self.__position = None
             raise TypeError("position must be a tuple of 2 positive integers")
@@ -34,10 +37,12 @@ class Square:
 
     @property
     def size(self):
+        """set size value."""
         return self.__size
 
     @size.setter
     def size(self, value):
+        """set size value."""
         self.__size = value
         if type(value) != int:
             raise TypeError("size must be an integer")
@@ -45,11 +50,11 @@ class Square:
             raise ValueError("size must be >= 0")
 
     def area(self):
-        ''' Returns the area '''
+        """return area."""
         return self.__size * self.__size
 
     def my_print(self):
-        '''print the square '''
+        """print the square."""
         if self.__size == 0:
             print()
 
