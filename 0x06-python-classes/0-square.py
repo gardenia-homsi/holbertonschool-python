@@ -9,7 +9,8 @@ Square
 '''
 
 
-class Square():
+class Square:
+    pass
     """
     a class to represent the Square of numbers
     """
