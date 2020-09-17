@@ -25,7 +25,7 @@ class Square:
         return self.__size * self.__size
         
     def __lt__(self, other):
-        # return comparison x<y
+        """ return comparison x<y"""
         if not isinstance(other, Square):
             pass
         if self.area < other.area:
@@ -34,7 +34,7 @@ class Square:
             return False
 
     def __le__(self, other):
-        # return comparison x<=y
+        """# return comparison x<=y"""
         if not isinstance(other, Square):
             pass
         if self.area <= other.area:
@@ -43,7 +43,7 @@ class Square:
             return False
 
     def __eq__(self, other):
-        # return comparison x==y
+        """# return comparison x==y"""
         if not isinstance(other, Square):
             pass
         if self.area == other.area:
@@ -52,7 +52,7 @@ class Square:
                 return False
 
     def __ne__(self, other):
-        # return comparison x!=y
+        """# return comparison x!=y"""
         if not isinstance(other, Square):
             pass
         if self.area != other.area:
@@ -61,7 +61,7 @@ class Square:
             return False
 
     def __gt__(self, other):
-        # return comparison x>y
+        """# return comparison x>y"""
         if not isinstance(other, Square):
             pass
         if self.area > other.area:
@@ -70,7 +70,7 @@ class Square:
             return False
 
     def __ge__(self, other):
-        # return comparison x>=y
+        """# return comparison x>=y"""
         if not isinstance(other, Square):
             pass
         if self.area >= other.area:
