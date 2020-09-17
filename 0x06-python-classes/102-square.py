@@ -25,7 +25,7 @@ class Square:
     def area(self):
         """This function return the area of square."""
         return self.__size * self.__size
-        
+
     def __lt__(self, other):
         """ return comparison x<y"""
         if not isinstance(other, Square):
