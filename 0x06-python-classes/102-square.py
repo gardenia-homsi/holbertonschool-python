@@ -24,5 +24,44 @@ class Square:
         """This function return the area of square."""
         return self.__size * self.__size
         
-    def __call__(self):
-        return self.area()
+    def __lt__(self, other):
+        # return comparison x<y
+        if self.area < other.area:
+            return True
+        else:
+            return False
+
+    def __le__(self, other):
+        # return comparison x<=y
+        if self.area <= other.area:
+            return True
+        else:
+            return False
+
+    def __eq__(self, other):
+        # return comparison x==y
+        if self.area == other.area:
+            return True
+        else:
+                return False
+
+    def __ne__(self, other):
+        # return comparison x!=y
+        if self.area != other.area:
+            return True
+        else:
+            return False
+
+    def __gt__(self, other):
+        # return comparison x>y
+        if self.area > other.area:
+            return True
+        else:
+            return False
+
+    def __ge__(self, other):
+        # return comparison x>=y
+        if self.area >= other.area:
+            return True
+        else:
+            return False
