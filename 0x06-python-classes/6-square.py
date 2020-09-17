@@ -7,10 +7,18 @@ class Square:
     """This class has private size attribute with exceptions."""
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
-        try:
-            self.position = position
-        except TypeError as ti:
-            print(ti)
+        if len(position) == 2:
+            if type(position[0]) != int\
+               or type(position[1]) != int or type(position) != tuple:
+                raise TypeError("position must be a tuple of \
+2 positive integers")
+            if type(position[0]) is int and type(position[1]) is int:
+                if int(position[0]) < 0 or int(position[1]) < 0:
+                    raise TypeError("position must be a tuple of \
+2 positive integers")
+        else:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = position
 
     @property
     def position(self):
