@@ -28,7 +28,7 @@ class Square:
         """ return comparison x<y"""
         if not isinstance(other, Square):
             pass
-        if self.area < other.area:
+        if self.area() < other.area():
             return True
         else:
             return False
@@ -37,7 +37,7 @@ class Square:
         """# return comparison x<=y"""
         if not isinstance(other, Square):
             pass
-        if self.area <= other.area:
+        if self.area() <= other.area():
             return True
         else:
             return False
@@ -46,7 +46,7 @@ class Square:
         """# return comparison x==y"""
         if not isinstance(other, Square):
             pass
-        if self.area == other.area:
+        if self.area() == other.area():
             return True
         else:
                 return False
@@ -55,7 +55,7 @@ class Square:
         """# return comparison x!=y"""
         if not isinstance(other, Square):
             pass
-        if self.area != other.area:
+        if self.area() != other.area():
             return True
         else:
             return False
@@ -64,7 +64,7 @@ class Square:
         """# return comparison x>y"""
         if not isinstance(other, Square):
             pass
-        if self.area > other.area:
+        if self.area() > other.area():
             return True
         else:
             return False
@@ -73,7 +73,7 @@ class Square:
         """# return comparison x>=y"""
         if not isinstance(other, Square):
             pass
-        if self.area >= other.area:
+        if self.area() >= other.area():
             return True
         else:
             return False
