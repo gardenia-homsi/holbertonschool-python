@@ -7,7 +7,7 @@ Using ``print_square``
 This is an example text file in reStructuredText format.  First import
 ``print_square`` from the ``example`` print_square:
 
-    >>> from example import factorial
+    >>> print_square = __import__('4-print_square').print_square
 
 Now use it:
 
