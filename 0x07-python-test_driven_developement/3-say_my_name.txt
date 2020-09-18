@@ -1,0 +1,20 @@
+The ``3-say_my_name`` module
+======================
+
+Using ``say_my_name``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``say_my_name`` from the ``3-say_my_name`` module:
+
+    >>> from example import factorial
+
+Now use it:
+
+    >>> say_my_name("John", "Smith")
+    >>> say_my_name("Walter", "White")
+    >>> say_my_name("Bob")
+    >>> try:
+            say_my_name(12, "White")
+        except Exception as e:
+            print(e)
