@@ -5,10 +5,11 @@
 def matrix_divided(matrix, div):
     """funct"""
     new-matrix = []
-    if type(div) != int or type(div) != float:
+    if type(div) is int or type(div) is float:
+        if int(div) == 0:
+            raise ZeroDivisionError("division by zero")
+    else:
         raise TypeError("div must be a number")
-    if div == 0:
-        raise ZeroDivisionError("division by zero")
     for i in range(len(matrix)):
         if len(matrix(i)) != len(matrix(i) + 1):
             rasie TypeError("Each row of the matrix must have the same size")
