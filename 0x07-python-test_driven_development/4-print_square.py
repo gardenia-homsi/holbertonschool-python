@@ -5,12 +5,13 @@ eptions."""
 
 def print_square(size):
     """this function is for printing square"""
-    if type(size) != int:
-        raise TypeError("size must be an integer")
-    elif size < 0:
-        raise ValueError("size must be >= 0")
+     if type(size) is int:
+        if size >= 0:
+            for iter in range(size):
+                for iter2 in range(size):
+                    print("#", end="")
+                print("")
+        else:
+            raise ValueError("size must be >= 0")
     else:
-        for i in range(0, size):
-            for j in range(0, size):
-                print("#", end="")
-        print("")
+        raise TypeError("size must be an integer")
