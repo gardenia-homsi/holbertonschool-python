@@ -1,15 +1,38 @@
-The ``example`` module
-======================
+>>> test = __import__('2-matrix_divided')
+>>> matrix = [[1, 2, 3],[4, 5, 6]]
 
-Using ``factorial``
--------------------
+>>> test.matrix_divided(matrix, 2)
+[[0.5, 1.0, 1.5], [2.0, 2.5, 3.0]]
 
-This is an example text file in reStructuredText format.  First import
-``factorial`` from the ``example`` module:
+>>> matrix = [[1, 2, "hola"],[4, 5, 6]]
+>>> test.matrix_divided(matrix, 2)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
 
-    >>> from example import factorial
+>>> matrix = [[1, 2, 3, 4],[4, 5, 6]]
+>>> test.matrix_divided(matrix, 2)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
 
-Now use it:
+>>> matrix = [[1, 2, 3],[4, 5, 6]]
+>>> test.matrix_divided(matrix, "")
+Traceback (most recent call last):
+TypeError: div must be a number
 
-    >>> factorial(6)
-    120
+>>> test.matrix_divided(matrix, 0)
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
+
+>>> matrix = []
+>>> test.matrix_divided(matrix, 2)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix = []
+>>> test.matrix_divided()
+Traceback (most recent call last):
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+>>> matrix = [[],[]]
+>>> test.matrix_divided(matrix, 3)
+[[], []]
