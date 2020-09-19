@@ -12,11 +12,7 @@ def add_integer(a, b=98):
       binary_sum (str): Binary string of the sum of a and b"""
     if type(a) not int:
         raise TypeError("a must be an integer")
-    if a is None:
-        raise TypeError("a must be an integer")
-    if b is None:
-        raise TypeError("b must be an integer")
-    if type(b) != int:
+    if type(b) not int:
         raise TypeError("b must be an integer")
     if type(a) is float or type(b) is float:
         a = int(a)
