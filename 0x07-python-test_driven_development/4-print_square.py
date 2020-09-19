@@ -5,7 +5,7 @@ eptions."""
 
 def print_square(size):
     """this function is for printing square"""
-     if type(size) is int:
+    if type(size) is int:
         if size >= 0:
             for iter in range(size):
                 for iter2 in range(size):
