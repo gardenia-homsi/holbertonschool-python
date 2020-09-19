@@ -12,19 +12,34 @@ This is a test file for 0-add_integer module.  First import
 Now use it:
 >>> print(add_integer(1, 2))
     3
+
 >>> print(add_integer(100, -2))
     98
+
 >>> print(add_integer(2))
     100
+
 >>> add_integer(100.3, -2)
     98
+
 >>> add_integer(4, "School")
     b must be an integer
+
 >>> add_integer(None) 
     a must be an integer
+
 >>> add_integer(2, None)
     b must be an integer
+
 >>> add_integer("to", "hi")
     a must be an integer
+
+>>> add_integer(1.5)
+    99
+
+>>> add_integer(1.8)
+    99
+
 >>> add_integer()
-    add_integr() missing 1 required positional argument
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
