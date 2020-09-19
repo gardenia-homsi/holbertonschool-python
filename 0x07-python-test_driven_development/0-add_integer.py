@@ -14,9 +14,13 @@ def add_integer(a, b=98):
         raise TypeError("a must be an integer")
     if a is None:
         raise TypeError("a must be an integer")
+    if b is None:
+        raise TypeError("b must be an integer")
     if type(b) == str:
         raise TypeError("b must be an integer")
     if type(a) is float or type(b) is float:
         a = int(a)
         b = int(b)
+    if a == "" and b == "":
+        raise TypeError("add_integr() missing 1 required positional argument")
     return a+b

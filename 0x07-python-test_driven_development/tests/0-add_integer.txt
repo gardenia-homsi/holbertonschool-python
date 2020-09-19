@@ -22,3 +22,10 @@ Now use it:
     b must be an integer
 >>> add_integer(None) 
     a must be an integer
+>>> add_integer(2, None)
+    b must be an integer
+>>> add_integer("to", "hi")
+    a must be an integer
+>>> add_integer()
+    add_integr() missing 1 required positional argument
+    
