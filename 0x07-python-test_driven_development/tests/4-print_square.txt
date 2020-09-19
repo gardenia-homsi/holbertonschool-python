@@ -1,35 +1,61 @@
+
+======================
 The ``4-print_square`` module
 ======================
 
 Using ``print_square``
 -------------------
 
-This is an example text file in reStructuredText format.  First import
-``print_square`` from the ``example`` print_square:
+This is a text file to test the 4-print_square module.  First import
+``4-print_square`` from the ``print_square`` module:
 
-    >>> print_square = __import__('4-print_square').print_square
+>>> print_square = __import__('4-print_square').print_square
 
-Now use it:
+Now use it with:
 
-    >>> print_square(4)
-        ####
-        ####
-        ####
-        ####
-    >>> print_square(10)
-        ##########
-        ##########
-        ##########
-        ##########
-        ##########
-        ##########
-        ##########
-        ##########
-        ##########
-        ##########
-    >>> print_square(0)
-        
-    >>> print_square(1)
-        #
-    >>> print_square(-1)
-        size must be >= 0
+>>> print_square(4)
+####
+####
+####
+####
+
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+>>> print_square(0)
+
+>>> print_square(1)
+#
+
+>>> print_square(-1)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+
+>>> print_square("1")
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> print_square(10.3)
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> print_square(-10.3)
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> print_square()
+Traceback (most recent call last):
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+>>> print_square(10e1000)
+Traceback (most recent call last):
+TypeError: size must be an integer
