@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-    0_add_integer.py
-    This function adds two numbers
-    return a + b
+this module include function to add two integers
+rasise exception if not integer
+has test cases 
 """
 
 
