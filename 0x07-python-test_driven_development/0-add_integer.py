@@ -10,9 +10,9 @@ def add_integer(a, b=98):
     """Returns the sum of two integer numbers in binary digits.
       Returns:
       binary_sum (str): Binary string of the sum of a and b"""
-    if type(a) not int:
+    if type(a) not int or type(a) not float:
         raise TypeError("a must be an integer")
-    if type(b) not int:
+    if type(b) not int or type(b) not float:
         raise TypeError("b must be an integer")
     if type(a) is float:
         a = int(a)
