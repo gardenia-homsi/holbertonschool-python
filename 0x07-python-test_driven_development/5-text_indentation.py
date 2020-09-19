@@ -7,9 +7,9 @@ def text_indentation(text):
     characters: ., ?"""
     if type(text) is str:
         for s in text:
-            if s == "." or s == "?":
-                print()
+            if s is '.' or s is '?' or s is ':':
+                print("\n")
             else:
                 print(s, end="")
-        else:
-            raise TypeError("text must be a string")
+    else:
+        raise TypeError("text must be a string")
