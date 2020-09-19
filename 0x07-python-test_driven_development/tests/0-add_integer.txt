@@ -28,4 +28,3 @@ Now use it:
     a must be an integer
 >>> add_integer()
     add_integr() missing 1 required positional argument
-    
