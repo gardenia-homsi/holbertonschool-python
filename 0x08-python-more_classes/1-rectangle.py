@@ -17,7 +17,7 @@ class Rectangle:
             raise TypeError("height must be an integer")
 
     def width(self):
-        return self._width
+        return self.__width
 
     def width(self, value):
         if type(value) is int:
