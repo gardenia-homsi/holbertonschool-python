@@ -1,16 +1,63 @@
-def my_print(self):
-        str = ""
-        if self.__size == 0:
-            str += ""
+#!/usr/bin/python3
+class Rectangle:
+    def __init__(self, width=0, height=0):
+        if type(width) is int:
+            if width >= 0:
+                self.__width = width
+            else:
+                raise ValueError("width must be >= 0")
         else:
-            str += "\n" * self.__position[1]
-            for i in range(0, self.__size):
-                for j in range(0, self.__position[0]):
-                    str += " "
-                for n in range(0, self.__size):
+            raise TypeError("width must be an integer")
+        if type(height) is int:
+            if height >= 0:
+                self.__height = height
+            else:
+                raise ValueError("height must be >= 0")
+        else:
+            raise TypeError("height must be an integer")
+
+    def width(self):
+        return self.__width
+
+    def width(self, value):
+        if type(value) is int:
+            if value >= 0:
+                self.__width = value
+            else:
+                raise ValueError("width must be >= 0")
+        else:
+            raise TypeError("width must be an integer")
+
+    def height(self):
+        return self.__height
+
+    def height(self, value):
+        if type(value) is int:
+            if value >= 0:
+                self.__height = value
+            else:
+                raise ValueError("height must be >= 0")
+        else:
+            raise TypeError("height must be an integer")
+
+    def area(self):
+        return self.__width * self.__height
+
+    def perimeter(self):
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        else:
+            return 2 * (self.__width + self.__height)
+
+    def my_print(self):
+        str = ""
+        if self.__width == 0 or self.__height == 0:
+            return str
+        else:
+            for i in range(self.__height):
+                for j in range(self.__width):
                     str += "#"
-                if i != self.__size - 1:
-                    str += "\n"
+            str += "\n"
         return str
 
     def __str__(self):
