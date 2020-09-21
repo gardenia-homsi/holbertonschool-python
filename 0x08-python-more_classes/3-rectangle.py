@@ -49,16 +49,11 @@ class Rectangle:
         else:
             return 2 * (self.__width + self.__height)
 
-    def my_print(self):
-        str = ""
-        if self.__width == 0 or self.__height == 0:
-            return str
-        else:
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    str += "#"
-            str += "\n"
-        return str
-
     def __str__(self):
-        return self.my_print()
+        str = ""
+        if self.__width != 0 or self.__height != 0:
+            for i in range(self.__height):
+                str += "#" * self.__width
+                if i < (self.__height - 1):
+                    str += "\n"
+        return str
