@@ -4,10 +4,12 @@
 
 class Rectangle:
     """function that initiate rectangle"""
+    number_of_instances = 0
     def __init__(self, width=0, height=0):
         """ Initialice the values """
         self.width = width
         self.height = height
+        number_of_instances += 1
 
     @property
     def width(self):
