@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
 What is OOP
 “first-class everything”
@@ -24,3 +25,6 @@ How to bind attributes to object and classes
 What is and what does contain __dict__ of a class and of an instance of a class
 How does Python find the attributes of an object or class
 How to use the getattr function
+=======
+New project about classes and objects
+>>>>>>> ae84698ae9e301eee029863755080e58ed53a051
