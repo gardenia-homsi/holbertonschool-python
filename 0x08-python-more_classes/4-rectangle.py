@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""gardenia"""
+
+
 class Rectangle:
+    """rectangel"""
     def __init__(self, width=0, height=0):
         if type(width) is int:
             if width >= 0:
@@ -54,13 +58,15 @@ class Rectangle:
             return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        str = ""
-        if self.__width != 0 or self.__height != 0:
-            for i in range(self.__height):
-                str += "#" * self.__width
-                if i < (self.__height - 1):
-                    str += "\n"
-        return str
+        """ Redefine the method str to print the rectangle """
+        s = ""
+        if self.width != 0 and self.height != 0:
+            for i in range(self.height):
+                s += "#" * self.width
+                if i < (self.height - 1):
+                    s += "\n"
+
+        return s
 
     def __repr__(self):
-        return("Rectangle({}, {})".format(self.__width, self.__height))
+        return "Rectangle({}, {})".format(self.width, self.height)
