@@ -86,4 +86,4 @@ class Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
 
     def square(cls, size=0):
-        return Rectangle(size, size)
+        return cls(size, size)
