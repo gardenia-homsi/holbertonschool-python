@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""gardenia"""
+
+
 class Rectangle:
+    """function rect with area"""
     def __init__(self, width=0, height=0):
         if type(width) is int:
             if width >= 0:
