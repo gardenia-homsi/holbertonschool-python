@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""gardenia"""
+
+
 class Rectangle:
+    """function that initiate rectangle"""
     def __init__(self, width=0, height=0):
         """ Initialice the values """
         self.width = width
