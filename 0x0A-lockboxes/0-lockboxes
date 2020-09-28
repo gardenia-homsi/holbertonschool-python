@@ -1,10 +1,24 @@
 #!/usr/bin/python3
 def canUnlockAll(boxes):
-list = [0]
-for i in boxes[0]:
-list.append(i)
-for j in list:
-for key in boxes[j]:
-***compare and extract the difference between 2 lists***
-***append list with new differences***
-***then check this differeences with the rest of the list***
+    list = [0]
+    for i in boxes[0]:
+        list.append(i)
+    for key in list:
+        list.append(Diff(list, boxes[key])
+        list=RemoveDup(list)
+    if length(list) == lenght(boxes):
+        return True
+    else:
+        return False
+
+                    
+def Diff(li1, li2): 
+    li_dif=[i for i in li1 + li2 if i not in li1 or i not in li2] 
+    return li_dif
+
+def RemoveDup(test_list):
+    res=[] 
+    for i in test_list: 
+        if i not in res: 
+            res.append(i) 
+    return res
