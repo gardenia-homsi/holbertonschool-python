@@ -1,12 +1,32 @@
 #!/usr/bin/python3
 
-canUnlockAll = __import__('0-lockboxes').canUnlockAll
+def RemoveDup(test_list):
+    res=[] 
+    for i in test_list: 
+        if i not in res: 
+            res.append(i) 
+    return res
 
-boxes = [[1], [2], [3], [4], []]
-print(canUnlockAll(boxes))
 
-boxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]
-print(canUnlockAll(boxes))
+def canUnlockAll(boxes):
+    list = [0]
+    for i in boxes[0]:
+        list.append(i)
+    for key in list:
+        list.append(Diff(list, boxes[key])
+        for j in list:
+        	if j not in res:
+        		res.append(i)
+        list = res
+        
+    
+    if length(list) == lenght(boxes):
+        return True
+    else:
+        return False
 
-boxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]
-print(canUnlockAll(boxes))
+                    
+def Diff(li1, li2): 
+    li_dif=[i for i in li1 + li2 if i not in li1 or i not in li2] 
+    return li_dif
+
