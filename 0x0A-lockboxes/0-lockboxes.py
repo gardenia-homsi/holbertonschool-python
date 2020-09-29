@@ -7,7 +7,7 @@ def canUnlockAll(boxes):
         return True
     else:
         list = []
-        if 0 not is list:
+        if 0 not in list:
             list.append(0)
         """loop inside list and append new key boxes for the unchecked one"""
         for i in list:
