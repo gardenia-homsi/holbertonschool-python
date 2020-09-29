@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def canUnlockAll(boxes):
     """ function to check the unblocked boxes inside a list of boxes"""
-    if len(boxes) == None:
+    if boxes is None:
         raise TypeError("boxes can't be NoneType")
     elif len(boxes) == 1:
         return True
