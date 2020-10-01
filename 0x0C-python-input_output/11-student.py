@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Python function to create class Student"""
 
