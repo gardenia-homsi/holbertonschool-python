@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""read based on nb lines"""
 
 
 def read_lines(filename="", nb_lines=0):
