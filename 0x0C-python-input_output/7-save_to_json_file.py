@@ -1,11 +1,14 @@
+  
 #!/usr/bin/python3
-"""write object to a file using json representation"""
+"""to json and write in a file"""
+
 
 import json
 
 
 def save_to_json_file(my_obj, filename):
-    """ function"""
-    JsonRep = json.dumps(my_obj)
+    """ Returns an object python
+        it could also be said that it converts from JSON to python
+    """
     with open(filename, "w") as writer:
-        writer.write(JsonRep)
+        writer.write(json.dumps(my_obj))
