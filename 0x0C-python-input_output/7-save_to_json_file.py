@@ -1,4 +1,3 @@
-  
 #!/usr/bin/python3
 """to json and write in a file"""
 
