@@ -1,4 +1,4 @@
->>>BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 # Initialize Class
        >>> bg = BaseGeometry()
@@ -63,3 +63,9 @@
        Traceback (most recent call last):
        ...
        TypeError: age must be an integer
+
+# Test if second argument a dict
+       >>> bg.integer_validator("check", {6, 8})
+       Traceback (most recent call last):
+       ...
+       TypeError: check must be an integer
