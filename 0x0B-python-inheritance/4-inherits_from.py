@@ -1,10 +1,14 @@
 #!/usr/bin/python3
-"""contain inherits_form function"""
+"""Module 4-inherits_from.py"""
 
 
 def inherits_from(obj, a_class):
-    """return if the obj is subclass of a_class"""
-    if isinstance(obj, a_class) and issubclass(a_class, type(obj)):
+    """check if the class of obj
+     inhertid from a_class
+     """
+    if a_class == type(obj):
         return False
-    else:
+    elif a_class in type(obj).mro():
         return True
+    else:
+        return False
