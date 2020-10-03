@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""contain is_same_class function"""
+"""Module 2-is_same_class.py"""
 
 
 def is_same_class(obj, a_class):
-    """function that check class and object"""
-    if isinstance(obj, a_class):
+    """check if obj is a_class"""
+    if type(obj).__name__ == a_class.__name__:
         return True
     else:
         return False
