@@ -72,3 +72,8 @@ class Rectangle(Base):
     def area(self):
         """ return thr area of rectangle"""
         return (self.__width * self.__height)
+
+    def __str__(self):
+        """overriding the str method"""
+        return ("[Rectangle](self.id) self.__x/self.__y - self.__width/self.__h
+        eight")
