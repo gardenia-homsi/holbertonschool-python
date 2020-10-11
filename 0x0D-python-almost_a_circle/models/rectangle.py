@@ -112,13 +112,5 @@ class Rectangle(Base):
                 self.__id = args[0]
         else:
             for key, value in kwargs.iteritems():
-                if key == "id":
-                    self.__id = value
-                if key == "width":
-                    self.__width = value
-                if key == "height":
-                    self.__height = value
-                if key == "x":
-                    self.__x = value
-                if key == "y":
-                    self.__y = value
+                if hasattr(self, key) is True:
+                    setattr(self, key, value)
