@@ -69,6 +69,16 @@ class Rectangle(Base):
             raise ValueError("y must be > 0")
         self.__y = value
 
+    def display(self):
+        for h in range(0, x):
+            print(" ")
+        for v in range(0, y):
+            print()
+        for i in range(0, height):
+            for j in range(0, width):
+                print("#", end="")
+            print()
+
     def area(self):
         """ return thr area of rectangle"""
         return (self.__width * self.__height)
@@ -77,3 +87,38 @@ class Rectangle(Base):
         """overriding the str method"""
         return ("[Rectangle](self.id) self.__x/self.__y - self.__width/self.__h
         eight")
+
+    update(self, *args, **kwargs):
+        if args not None and args != []:
+            if len(args) == 5:
+                self.__id = args[0]
+                self.__width = args[1]
+                self.__height = args[2]
+                self.__x = args[3]
+                self.__y = args[4]
+            if len(args) == 4:
+                self.__id = args[0]
+                self.__width = args[1]
+                self.__height = args[2]
+                self.__x = args[3]
+            if len(args) == 3:
+                self.__id = args[0]
+                self.__width = args[1]
+                self.__height = args[2]
+            if len(args) == 2:
+                self.__id = args[0]
+                self.__width = args[1]
+            if len(args) == 1:
+                self.__id = args[0]
+        else:
+            for key, value in kwargs.iteritems():
+                if key == "id":
+                    self.__id = value
+                if key == "width":
+                    self.__width = value
+                if key == "height":
+                    self.__height = value
+                if key == "x":
+                    self.__x = value
+                if key == "y":
+                    self.__y = value
