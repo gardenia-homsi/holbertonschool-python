@@ -88,7 +88,7 @@ class Rectangle(Base):
         return ("[Rectangle](self.id) self.__x/self.__y - self.__width/self.__h
         eight")
 
-    update(self, *args, **kwargs):
+    def update(self, *args, **kwargs):
         if args not None and args != []:
             if len(args) == 5:
                 self.__id = args[0]
