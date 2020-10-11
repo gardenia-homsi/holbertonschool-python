@@ -3,6 +3,7 @@
 
 
 class Square(Rectangle):
+    """class Square inheret from Rectangle"""
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(self, size, size, x, y, id)
 
@@ -40,3 +41,9 @@ class Square(Rectangle):
             for key, value in kwargs.items():
                 if hasattr(self, key) is True:
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        """dictionary rep"""
+        dictionary = {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.
+        y}
+        return(dictionary)
