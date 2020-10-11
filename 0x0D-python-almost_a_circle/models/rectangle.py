@@ -70,6 +70,7 @@ class Rectangle(Base):
         self.__y = value
 
     def display(self):
+        """display rectangle"""
         for h in range(0, x):
             print(" ")
         for v in range(0, y):
@@ -89,6 +90,7 @@ class Rectangle(Base):
         eight")
 
     def update(self, *args, **kwargs):
+        """when number of argument not defined"""
         if args not None and args != []:
             if len(args) == 5:
                 self.__id = args[0]
@@ -114,3 +116,9 @@ class Rectangle(Base):
             for key, value in kwargs.iteritems():
                 if hasattr(self, key) is True:
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        """return dictionary representation"""
+        dictionary = {'x': self.x, 'y': self.y, 'id': self.id, 'height': self.h
+        eight, 'width': self.width}
+        return(dictionary)
