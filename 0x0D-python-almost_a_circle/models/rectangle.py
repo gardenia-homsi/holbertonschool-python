@@ -7,6 +7,8 @@ from models.base import Base
 
 class Rectangle(Base):
     """this calss contain one __init__ function with 4 private atribut"""
+    
+    
     def __init__(self, width, height, x=0, y=0, id=None):
         """this function define 4 private attribute and one public defiened by s
         uper class"""
@@ -14,7 +16,7 @@ class Rectangle(Base):
         __height = height
         __x = x
         __y = y
-        id = super().id
+        super().__init__(id)
 
     @property
     def width(self):
