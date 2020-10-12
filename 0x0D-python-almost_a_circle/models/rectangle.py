@@ -88,9 +88,10 @@ class Rectangle(Base):
         return (self.__width * self.__height)
 
     def __str__(self):
-        """overriding the str method"""
-        return ("[Rectangle](self.id) self.__x/self.__y - self.__width/self.__h
-        eight")
+        """change the print output"""
+        return("[{}] ({}) {}/{} - {}/{}".format(
+            type(self).__name__, self.id, self.__x, self.__y,
+            self.__width, self.__height))
 
     def update(self, *args, **kwargs):
         """when number of argument not defined"""
@@ -121,7 +122,9 @@ class Rectangle(Base):
                     setattr(self, key, value)
 
     def to_dictionary(self):
-        """return dictionary representation"""
-        dictionary = {'x': self.x, 'y': self.y, 'id': self.id, 'height': self.h
-        eight, 'width': self.width}
-        return(dictionary)
+        """ Returns a dictionary with every attribute of the
+            Rectangle class
+        """
+        dic_rec = {"x": self.x, "y": self.y, "id": self.id,
+                   "height": self.height, "width": self.width}
+        return dic_rec
