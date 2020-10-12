@@ -7,8 +7,6 @@ from models.base import Base
 
 class Rectangle(Base):
     """this calss contain one __init__ function with 4 private atribut"""
-    
-    
     def __init__(self, width, height, x=0, y=0, id=None):
         """this function define 4 private attribute and one public defiened by s
         uper class"""
@@ -76,13 +74,13 @@ class Rectangle(Base):
 
     def display(self):
         """display rectangle"""
-        for h in range(0, x):
-            print(" ")
-        for v in range(0, y):
+        for l in range(self.__y):
             print()
-        for i in range(0, height):
-            for j in range(0, width):
-                print("#", end="")
+        for i in range(self.__height):
+            for k in range(self.__x):
+                print(' ', end='')
+            for j in range(self.__width):
+                print('#', end='')
             print()
 
     def area(self):
