@@ -2,6 +2,9 @@
 """ this model contain Rectangle class """
 
 
+from models.base import Base
+
+
 class Rectangle(Base):
     """this calss contain one __init__ function with 4 private atribut"""
     def __init__(self, width, height, x=0, y=0, id=None):
