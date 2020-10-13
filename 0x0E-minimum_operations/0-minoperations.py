@@ -7,7 +7,7 @@ def minOperations(n):
     min_operation = 0
     if n <= 1:
         return 0
-    elif n % 2 == 0:
+    elif n % 2 == 0 and n % 3 != 0:
         min_operation = n/2 + 2
         return min_operation
     elif n % 3 == 0:
