@@ -9,7 +9,10 @@ def minOperations(n):
     if n <= 1:
         return 0
     while div < n:
-        if n % div == 0:
+        if n % 3 == 0:
+            min_operation = n / 3 + 3
+            return min_operation
+        elif n % div == 0:
             min_operation = n / div + div
             return min_operation
         else:
