@@ -1,3 +1,3 @@
 #!/bin/bash
 # get the body response of a url that redirect
-curl -sL "$1" 
+curl -s -X GET -L "$1"
