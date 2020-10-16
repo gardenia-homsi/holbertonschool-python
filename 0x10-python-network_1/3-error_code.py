@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-manage urllib.error.HTTPError exceptions 
-"""
+"""manage urllib.error.HTTPError exceptions"""
 
 
 from urllib import (request, parse, error)
@@ -14,4 +12,4 @@ if __name__ == "__main__":
 
         print(body.decode('utf8'))
     except error.HTTPError as err:
-        print("Error code: {}".format(err.code)
+        print("Error code: {}".format(err.code))
