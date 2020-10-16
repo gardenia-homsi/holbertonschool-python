@@ -1,10 +1,14 @@
 #!/usr/bin/python3
-"""Python script that displays getheader value"""
+"""
+    1-hbtn_header.py
+"""
 
+from urllib import (request)
+from sys import argv
 
-if __name__ == '__main__':
-    import urllib.request as ur
-    from sys import argv
+if __name__ == "__main__":
+    req = request.Request(argv[1])
+    with request.urlopen(req) as response:
+        header = response.info()
 
-    with ur.urlopen(argv[1]) as header:
-        print(header.getheader('X-Request-Id'))
+    print(header.get("X-Request-Id"))
