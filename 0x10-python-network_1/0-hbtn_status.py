@@ -2,7 +2,7 @@
 """this model is to fetch internet resources"""
 
 
-mport urllib.request
+from urllib import (request)
 
 if __name__ == "__main__":
     req = request.Request("https://intranet.hbtn.io/status")
