@@ -15,7 +15,7 @@ def find_peak(list_of_integers):
     l = 0
     lis = list_of_integers
     while h > l:
-        half = (h + l) / 2
+        half = (h + l) // 2
         if lis[half] <= lis[half + 1]:
             l = half + 1
         elif lis[half] <= lis[half - 1]:
