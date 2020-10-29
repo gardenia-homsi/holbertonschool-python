@@ -1,4 +1,5 @@
 -- creates a stored procedure ComputeOverallScoreForUser
+---7-overall_score.sql
 DELIMITER |
 CREATE PROCEDURE ComputeOverallScoreForUser (
     IN user_id int
