@@ -1,7 +1,4 @@
--- creates a table users
-CREATE TABLE IF NOT EXISTS `users` (  
-    `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    `email` VARCHAR(255) NOT NULL UNIQUE,
-    `name` VARCHAR(255),
-    `country` ENUM('US', 'CO', 'TN') NOT NULL 
-)
+-- ranks country origins of bands, ordered by the number of (non-unique) fans
+SELECT DISTINCT `origin`, SUM(`fans`) as `nb_fans` FROM `metal_bands`
+GROUP BY `origin`
+ORDER BY `nb_fans` DESC;
