@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""provides some stats about Nginx logs stored in MongoDB"""
+"""12-log_stats.py"""
 from pymongo import MongoClient
 
 
